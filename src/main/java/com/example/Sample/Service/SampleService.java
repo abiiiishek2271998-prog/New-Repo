@@ -17,4 +17,8 @@ public class SampleService implements SampleServiceInterface {
 		return repo.save(sample);
 	}
 
+	public Sample findBy(int id)
+	{
+		return repo.findById(id).orElseThrow(()-> new RuntimeException("Id not Found"));
+	}
 }

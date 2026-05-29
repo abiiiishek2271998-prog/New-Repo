@@ -4,5 +4,6 @@ import com.example.Sample.Entity.Sample;
 
 public interface SampleServiceInterface {
 	public Sample saveData(Sample sample);
+	public Sample findBy(int id);
 
 }
